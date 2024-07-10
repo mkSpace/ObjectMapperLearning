@@ -16,7 +16,7 @@ import java.time.LocalDateTime
 import java.time.LocalTime
 
 @SpringBootTest
-@Import(PlainObjectMapperConfiguration::class)
+@Import(PlainObjectMapperBuilderConfiguration::class)
 class PlainObjectMapperTest {
 
     @Autowired

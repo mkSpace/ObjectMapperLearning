@@ -15,7 +15,7 @@ import java.time.LocalTime
 import java.time.format.DateTimeFormatter
 
 @TestConfiguration
-class CustomizedObjectMapperConfiguration {
+class CustomizedObjectMapperBuilderConfiguration {
 
     @Bean
     fun objectMapperBuilder(customizers: List<Jackson2ObjectMapperBuilderCustomizer>): Jackson2ObjectMapperBuilder {
@@ -32,10 +32,5 @@ class CustomizedObjectMapperConfiguration {
     @Bean
     fun userModule(): UserModule {
         return UserModule()
-    }
-
-    @Bean
-    fun objectMapperCustomizer(): SimpleObjectMapperBuilderCustomizer {
-        return SimpleObjectMapperBuilderCustomizer()
     }
 }

@@ -16,9 +16,9 @@ import java.time.LocalDate
 import java.time.LocalDateTime
 import java.time.LocalTime
 
-@Import(CustomizedObjectMapperConfiguration::class)
+@Import(CustomizedObjectMapperBuilderConfiguration::class)
 @SpringBootTest
-class CustomizedObjectMapperTest {
+class CustomizedObjectMapperBuilderTest {
 
     @Autowired
     private lateinit var objectMapper: ObjectMapper

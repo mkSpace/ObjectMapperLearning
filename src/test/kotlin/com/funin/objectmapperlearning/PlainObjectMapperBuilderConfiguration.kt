@@ -14,7 +14,7 @@ import java.time.LocalTime
 import java.time.format.DateTimeFormatter
 
 @TestConfiguration
-class PlainObjectMapperConfiguration {
+class PlainObjectMapperBuilderConfiguration {
 
     @Bean
     fun objectMapperBuilder(): Jackson2ObjectMapperBuilder {
@@ -29,10 +29,5 @@ class PlainObjectMapperConfiguration {
     @Bean
     fun userModule(): UserModule {
         return UserModule()
-    }
-
-    @Bean
-    fun objectMapperCustomizer(): SimpleObjectMapperBuilderCustomizer {
-        return SimpleObjectMapperBuilderCustomizer()
     }
 }
