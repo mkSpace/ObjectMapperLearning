@@ -26,4 +26,8 @@ class PlainObjectMapperConfiguration {
             .serializerByType(LocalTime::class.java, LocalTimeSerializer(DateTimeFormatter.ISO_LOCAL_TIME))
     }
 
+    @Bean
+    fun userModule(): UserModule {
+        return UserModule()
+    }
 }
