@@ -33,4 +33,9 @@ class CustomizedObjectMapperConfiguration {
     fun userModule(): UserModule {
         return UserModule()
     }
+
+    @Bean
+    fun objectMapperCustomizer(): SimpleObjectMapperBuilderCustomizer {
+        return SimpleObjectMapperBuilderCustomizer()
+    }
 }
